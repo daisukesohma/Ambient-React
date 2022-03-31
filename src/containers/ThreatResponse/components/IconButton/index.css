@@ -1,0 +1,97 @@
+.iconbutton--default {
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  margin-left: 5px;
+  margin-top: 13px;
+  display: flex;
+  padding: 10px;
+}
+
+.iconbutton--default:hover {
+  color: #5E6163;
+}
+
+.iconbutton--deletecontact{
+  font-size: 12px;
+  padding: 1px 5px;
+  line-height: 1.5;
+  margin-right: 14px;
+  margin-top: 8px;
+}
+
+.iconbutton--indicator{
+  font-size: 12px;
+  padding: 1px 5px;
+  line-height: 1.5;
+}
+
+.iconbutton--notice:hover {
+  color: #f8ac59;
+}
+
+.iconbutton--primary {
+  padding: 6px 12px;
+  font-size: 14px;
+  margin-right: 8px;
+  margin-top: 4px;
+}
+
+.iconbutton--primarypolicyinput {
+  padding: 6px 12px;
+  font-size: 14px;
+  margin-right: 8px;
+  margin-top: 20px;
+}
+
+.iconbutton--primarypolicy {
+  padding: 6px 12px;
+  font-size: 14px;
+  margin-right: 8px;
+  height: 40px;
+  margin-top: 16px;
+}
+
+.disabled {
+  /*background-color: 'grey';*/
+}
+
+.iconbutton--primaryleveldelete {
+  /* padding: 6px 12px; */
+  font-size: 14px;
+  /* margin-right: 8px; */
+  margin-left: 12px;
+  margin-top: 8px;
+}
+
+.iconbutton--primaryduration {
+  /* padding: 6px 12px; */
+  font-size: 14px;
+  margin-top: 10px;
+  /* float: right; */
+}
+
+.iconbutton--primary:hover {
+  /* background-color: #18a689; */
+  /* border-color: #18a689; */
+}
+
+.iconbutton__icon {
+  margin: 2px;
+}
+
+.iconbutton__iconwithlabel {
+  margin: 2px;
+  margin-right: 4px;
+}
+
+.iconbutton__icondelete {
+  margin-right: 2px;
+}
+
+.iconbutton__label {
+  font-size: 12px;
+  margin-top: 9px;
+}

@@ -1,0 +1,72 @@
+/* eslint-disable react/jsx-props-no-spreading  */
+import React from 'react'
+import clsx from 'clsx'
+import get from 'lodash/get'
+import TextField from '@material-ui/core/TextField'
+
+import useStyles from './styles'
+
+function TextFieldAmbient({
+  defaultSpacing = true,
+  disabled = false,
+  formikObject,
+  id,
+  label,
+  onChange,
+  placeholder,
+  required,
+  withFormik,
+}) {
+  const classes = useStyles({ darkMode: true })
+
+  const formikProps = withFormik
+    ? {
+        value: get(formikObject, `values[${id}]`),
+        onChange: formikObject.handleChange,
+        onBlur: formikObject.handleBlur, // populates the touched object
+        error:
+          get(formikObject, `touched[${id}]`) &&
+          Boolean(get(formikObject, `errors[${id}]`)),
+        helperText:
+          get(formikObject, `touched[${id}]`) &&
+          get(formikObject, `errors[${id}]`),
+      }
+    : {}
+
+  return (
+    <div className={clsx({ [classes.textFieldSpacing]: defaultSpacing })}>
+      <TextField
+        disabled={disabled}
+        variant='outlined'
+        InputLabelProps={{
+          classes: {
+            animated: classes.inputLabelAnimated,
+            outlined: classes.inputLabelOutlined,
+            shrink: classes.inputLabelShrink,
+            asterisk: classes.inputLabelAsterisk,
+          },
+          disableAnimation: false,
+          variant: 'filled',
+          shrink: true,
+        }}
+        classes={{
+          root: classes.textFieldRoot,
+        }}
+        InputProps={{
+          classes: {
+            input: classes.inputBaseInput,
+          },
+          notched: false,
+        }}
+        label={label}
+        required={required}
+        placeholder={placeholder}
+        onChange={onChange}
+        id={id}
+        {...formikProps}
+      />
+    </div>
+  )
+}
+
+export default TextFieldAmbient

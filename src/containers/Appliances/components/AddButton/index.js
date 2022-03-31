@@ -1,0 +1,23 @@
+import React from 'react'
+import Fab from '@material-ui/core/Fab'
+import { Icon } from 'react-icons-kit'
+import { plus } from 'react-icons-kit/feather/plus'
+
+import useStyles from './styles'
+
+function AddButton() {
+  const classes = useStyles()
+
+  return (
+    <Fab
+      classes={{ root: classes.size }}
+      size={'small'}
+      color='primary'
+      aria-label='add'
+    >
+      <Icon icon={plus} size={18} />
+    </Fab>
+  )
+}
+
+export default AddButton

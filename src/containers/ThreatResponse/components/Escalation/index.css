@@ -1,0 +1,77 @@
+.app {
+  margin-top: 32px;
+}
+
+.app__toolbar{
+  margin-bottom: 16px;
+  float: right;
+  position: fixed;
+  right: 0;
+  top: 90px;
+  z-index: 1000;
+}
+
+.app__alertswitch {
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  padding: 10px;
+  /*background-color: #fffbf9;*/
+  /*box-shadow: 1px 1px 10px 0px #888888;*/
+  border-radius: 4px;
+  z-index: 10000;
+  opacity: 1;
+}
+.app__alertswitchlabel{
+  /* margin-top: 13px; */
+  padding-right: 8px;
+  margin: 0;
+  padding-top: 7px;
+  color: #626469;
+  font-size: 16px;
+  font-family: "Aeonik-Regular", "Roboto";
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+.policy__name {
+  /* display: flex; */
+  text-align: left;
+}
+
+.threat-title {
+  color: #626469;
+  font-size: 25px;
+  font-family: "Aeonik-Regular", "Roboto";
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+h2 {
+  color: #626469;
+  font-size: 24px;
+  font-family: "Aeonik-Regular", "Roboto";
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+
+h3 {
+  color: #626469;
+  font-size: 16px;
+  font-family: "Aeonik-Regular", "Roboto";
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}

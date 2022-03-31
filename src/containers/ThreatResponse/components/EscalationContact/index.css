@@ -1,0 +1,36 @@
+.contact__info{
+  margin-top: 4px;
+}
+.contact {
+  padding: 8px;
+  opacity: 0.75;
+}
+
+.contact--signedin {
+  padding: 8px;
+}
+
+.escalationcontact__deleteButton {
+  padding-top: 2.5px
+}.escalationcontact__toolbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-grow: 1;
+  align-items: flex-start;
+  margin-top: -5px;
+}
+
+.escalationcontact__link {
+  padding-right: 10px;
+}
+
+.contact-row {
+  align-items: flex-start;
+}
+
+.escalation-contact-remove-modal {
+  font-size: 18px;
+  margin-top: 0px;
+  text-align: left;
+}

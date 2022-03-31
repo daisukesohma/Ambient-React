@@ -1,0 +1,183 @@
+.playback-controller {
+    display: flex;
+    background-color: white;
+    padding: 1em;
+    justify-content: space-between;
+    padding-top: 2.2em;
+    position: relative;
+}
+
+.playback-controls-v1 {
+   margin-top: -25px;
+}
+
+.playback-component {
+    flex-grow: 0.1;
+    margin-top: -1em;
+    text-align: center;
+}
+.playback-component-bigger {
+    flex-grow: 0.3;
+    margin-top: -1em;
+    text-align: center;
+}
+
+.playback-streamts{
+    font-size: 0.8em;
+    margin-top: -0.3em;
+}
+
+.playback-component-range-slider {
+    flex-grow: 0.5;
+    margin-top: 2px;
+}
+
+.playback-component-progressbar{
+    flex-grow: 3.5;
+}
+
+.play-pause {
+    font-size: 1.6em;
+    margin-top: -0.3em;
+}
+
+.playback-button {
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.playback-button:hover{
+    opacity: 0.5;
+}
+
+.playback-live-indicator {
+    display: flex;
+    margin-top: 0.3em;
+}
+
+.playback-live-indicator-icon{
+    margin-top: 2px;
+    margin-right: 4px;
+}
+
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 0.4em;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    cursor: pointer;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background: #1ab394;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #1ab394;
+    cursor: pointer;
+}
+
+@media only screen and (max-device-width: 1025) {
+    .playback-controller {
+      display: none;
+    }
+}
+
+.timeline-ts-indicator{
+   position: absolute;
+   top: 5em;
+}
+
+.timeline-ts-indicator-end{
+   margin-left: -3em;
+}
+
+.timeline-container{
+   margin-top: -2em;
+}
+
+.double{
+   margin-top: -0.8em;
+}
+
+.step-amount{
+   margin-top: 5px;
+   position: absolute;
+   margin-left: -6.7px;
+   font-size: 0.4em;
+}
+.viewWindowIncrementIndicator-top {
+   font-size: 0.6em;
+   margin-bottom: 0.8em;
+}
+.viewWindowIncrementIndicator-bottom{
+   font-size: 0.8em;
+}
+
+.playback-controls-end{
+  margin-left: 1em;
+}
+
+.playback-controls-start{
+  margin-right: 1em;
+}
+
+.bottom-button{
+  margin-top: 1em;
+}
+
+.live-button{
+  display: flex;
+  justify-content: center;
+  margin-top: -0.4em;
+  margin-bottom: 0.8em;
+}
+
+.export-button{
+  margin-top: 1.6em;
+}
+.cancel-save{
+  font-size: 0.8em;
+}
+
+.export-controls{
+  font-size: 1.4em;
+}
+
+.export-controls-buttons{
+  margin-left: 0.1em;
+}
+
+.zoom-controls{
+  margin-left: 0.5em;
+  margin-right: -0.5em;
+}
+
+.buttonText {
+  color: #626469
+}

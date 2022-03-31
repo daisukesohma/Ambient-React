@@ -1,0 +1,51 @@
+import { makeStyles } from '@material-ui/core/styles'
+
+export default makeStyles(({ spacing, palette }) => ({
+  inputBaseInput: ({ darkMode }) => ({
+    background: darkMode ? palette.grey[800] : palette.grey[200],
+    color: darkMode ? palette.grey[200] : palette.common.black,
+    borderRadius: spacing(0.5),
+    padding: spacing(1.5),
+    fontSize: 14,
+  }),
+  textFieldRoot: ({ darkMode }) => ({
+    width: '100%',
+    '& .Mui-disabled': {
+      color: darkMode ? palette.grey[200] : palette.common.black,
+    },
+  }),
+  outlinedInputNotchedOutline: {
+    visibility: 'none',
+  },
+  inputLabelOutlined: {
+    '& .MuiInputLabel-shrink': {
+      transform: 'translate(0px, -20px) scale(0.75) !important',
+    },
+  },
+  inputLabelShrink: {
+    transform: 'translate(0px, -20px) scale(0.75) !important',
+    color: palette.grey[300],
+    display: 'flex',
+    flexDirection: 'row-reverse',
+  },
+  inputLabelAsterisk: {
+    color: palette.error.main,
+  },
+  link: {
+    color: palette.primary.main,
+  },
+  sectionHeader: {
+    color: palette.grey[800],
+  },
+  subtitleHeader: {
+    color: palette.grey[700],
+  },
+  // rename this to inputSpacing or something
+  textFieldSpacing: {
+    marginBottom: spacing(2),
+    paddingTop: spacing(2),
+  },
+  section: {
+    marginBottom: spacing(2),
+  },
+}))

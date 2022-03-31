@@ -1,0 +1,41 @@
+.methodIndicator {
+  margin-top: -15px;
+}
+.methodIndicator__button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 5px;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+.methodIndicator__buttonIcon--active {
+  color: #1ab394;
+  padding: 5px
+}
+
+.methodIndicator__buttonIcon--active:hover {
+  color: #69c773;
+}
+
+.methodIndicator__buttonIcon--inactive {
+  color: #A7B1C2;
+  padding: 5px
+}
+
+.methodIndicator__buttonIcon--inactive:hover {
+  /*color: #5E6163;*/
+}
+
+.methodIndicator__buttonIcon--updating {
+  color: #f8ac59;
+  padding: 5px
+}
+
+.methodIndicator__buttonLabel{
+  font-size: 12px;
+}
+.indicator__button {
+  margin: 2px;
+}

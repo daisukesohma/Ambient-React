@@ -1,0 +1,38 @@
+.tippy-tooltip.ambient-dark-theme {
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.tippy-tooltip.ambient-dark-theme[data-placement^=top]>.tippy-arrow {
+  border-width: 8px 8px 0;
+  border-top-color: black
+}
+
+.tippy-tooltip.ambient-dark-theme[data-placement^=bottom]>.tippy-arrow {
+  border-width: 0 8px 8px;
+  border-bottom-color: black
+}
+
+.tippy-tooltip.ambient-dark-theme[data-placement^=left]>.tippy-arrow {
+  border-width: 8px 0 8px 8px;
+  border-left-color: black
+}
+
+.tippy-tooltip.ambient-dark-theme[data-placement^=right]>.tippy-arrow {
+  border-width: 8px 8px 8px 0;
+  border-right-color: black
+}
+
+.tippy-tooltip.ambient-dark-theme>.tippy-content {
+  padding: 0px 0px
+}
+
+.tippy-tooltip.ambient-dark-theme>.tippy-backdrop {
+  background-color: black
+}
+
+.tippy-tooltip.ambient-dark-theme>.tippy-svg-arrow {
+  fill: black
+}

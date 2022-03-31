@@ -1,0 +1,162 @@
+#WeeklySchedulerTable table {
+  font-family: sans-serif;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: separate;
+  table-layout: fixed;
+  margin: auto;
+}
+#WeeklySchedulerTable table thead tr th .day {
+  display: block;
+  font-size: 1.2em;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto 5px;
+  padding: 5px;
+  line-height: 1.8;
+}
+#WeeklySchedulerTable table thead tr th .day.active {
+  background: #d1d5db;
+  color: #626e7e;
+}
+#WeeklySchedulerTable table thead tr th .short {
+  display: none;
+}
+#WeeklySchedulerTable table thead tr th i {
+  vertical-align: middle;
+  font-size: 2em;
+}
+#WeeklySchedulerTable table tbody tr td {
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  height: 6px;
+  cursor: pointer;
+  padding: 6px;
+}
+#WeeklySchedulerTable table tbody tr td.hour {
+  font-size: 1em;
+  padding: 0;
+  border-collapse: separate;
+  min-width: 50px;
+  cursor: default;
+}
+#WeeklySchedulerTable table tbody tr td.hour span {
+  display: block;
+}
+@media (max-width: 60em) {
+  #WeeklySchedulerTable table thead tr th .long {
+    display: none;
+  }
+  #WeeklySchedulerTable table thead tr th .short {
+    display: block;
+  }
+}
+@media (max-width: 27em) {
+  #WeeklySchedulerTable table thead tr th {
+    font-size: 65%;
+  }
+  #WeeklySchedulerTable table thead tr th .day {
+    display: block;
+    font-size: 1.2em;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin: 0 auto 5px;
+    padding: 5px;
+  }
+  #WeeklySchedulerTable table thead tr th .day.active {
+    background: #d1d5db;
+    color: #626e7e;
+  }
+  #WeeklySchedulerTable table tbody tr td.hour {
+    font-size: 1.7em;
+  }
+}
+#WeeklySchedulerTable {
+  width: 100%;
+  font-family: sans-serif;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+#EventSelector {
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+#EventSelector div.legend-body {
+  text-align: center;
+  vertical-align: middle;
+}
+#EventSelector div .radio-item {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 16px;
+}
+#EventSelector div .legend-color {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.ibox-title {
+  padding: 15px 0;
+}
+
+.ibox-title h5 {
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 20px 5px 7px;
+  padding: 0;
+  text-overflow: ellipsis;
+  float: left;
+  color: #626469;
+  font-family: "Aeonik-Regular", "Roboto";
+}
+
+.table-bordered {
+  border: 1px solid #EBEBEB;
+}
+
+.table>caption+thead>tr:first-of-type>td, .table>caption+thead>tr:first-child>th, .table>colgroup+thead>tr:first-child>td, .table>colgroup+thead>tr:first-child>th, .table>thead:first-child>tr:first-child>td, .table>thead:first-child>tr:first-child>th {
+  border-top: 0;
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+  line-height: 1.42857;
+  padding: 8px;
+  vertical-align: top;
+}
+
+.table > thead > tr > th {
+  vertical-align: bottom;
+}
+
+.table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
+  border: 1px solid #e7e7e7;
+}
+
+.table-bordered > thead > tr > th, .table-bordered > thead > tr > td {
+  border-bottom-width: 1px;
+}
+
+.table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+  border-bottom-width: 2px;
+}
+
+.table>thead>tr>th {
+  vertical-align: bottom;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 0px solid #ddd;
+  border-left-width: 0px;
+}

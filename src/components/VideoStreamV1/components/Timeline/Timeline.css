@@ -1,0 +1,127 @@
+.progress-container {
+    margin-top: 1.3em;
+    margin-bottom: 0.4em;
+}
+
+.progress-bar {
+    width: 100%;
+    empty-cells: show;
+    opacity: 0.9;
+    margin-top: 1em;
+}
+
+.progress-bar-marker {
+    border-left: 0.15em solid #f8ac59;
+    height: 2.5em;
+    margin-top: -0.5em;
+    position: absolute;
+    z-index: 2;
+}
+
+.progress-bar-marker-end {
+    border-left: 0.15em solid #f8ac59;
+    height: 3em;
+    margin-top: -1em;
+    position: absolute;
+    z-index: 2;
+}
+
+.progress-bar-mouse-indicator{
+    border-left: 0.15em solid #ed5565;
+    position: absolute;
+}
+
+.progress-bar-location-indicator{
+    border-left: 0.15em solid #ec4758;
+    position: relative;
+}
+
+.progress-bar-selection{
+    border-left: 0.15em solid #f8ac59;
+    height: 2.1em;
+    margin-top: -0.3em;
+    position: absolute;
+    background-color: #f8ac59;
+    opacity: 1;
+    z-index: -1;
+}
+
+.playback-thumbnail{
+    position: absolute;
+    top:-2.0em;
+    font-size: 0.8em;
+    margin-top: -0.2em;
+    color: #676a6c;
+    z-index: 1;
+}
+
+.playback-thumbnail-end{
+    top:-3.0em;
+}
+
+#timeline-container{
+    margin-top: -83px;
+}
+
+.svg-container-v1{
+    width: 100%;
+    overflow: hidden;
+    background-color: #f2f2f2;
+    margin-top: -10px;
+}
+
+.svg-quickscroll{
+    width: 100%;
+    overflow: hidden;
+}
+
+.draggable {
+    cursor: col-resize;
+}
+
+.quickscroll-axis{
+    font-size: 8;
+}
+
+.viewBox {
+    margin-top: 0.8em;
+}
+
+.timeline-sidecontrols {
+    margin-top: -1em;
+}
+
+.interactible{
+   cursor: pointer;
+}
+
+.waiting{
+   cursor: wait !important;
+}
+
+.drag-indicator{
+   color: white;
+}
+
+/* Entity Search Styles */
+.entity_selector_container {
+   width: 35%;
+   position: absolute;
+   bottom: 155px;
+   right: 0;
+}
+.entity_search__accordion__button{
+   font-size: 0.8em;
+   text-align: center;
+}
+
+.Select-placeholder{
+    text-align: center !important;
+}
+
+/* Seek Input Styles */
+.seek-input{
+    position: absolute;
+    right: 0;
+    display: flex;
+}

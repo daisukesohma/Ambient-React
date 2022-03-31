@@ -1,0 +1,33 @@
+.contactcreation{
+  padding: 10px;
+}
+
+.contactcreation__button{
+  display: flex;
+  justify-content: space-around;
+}
+
+.escalationContactForm {
+  padding: 8px;
+}
+
+.escalationContactForm__buttons{
+  padding-left: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.select-option {
+  display: flex;
+}
+
+.avatar-select-option {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.select-label {
+  margin-left: 4px;
+}

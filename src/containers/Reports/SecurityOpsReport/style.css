@@ -1,0 +1,11 @@
+.item-container {
+  margin-bottom: 30px !important;
+}
+
+/*.gauges > div:first-of-type {*/
+/*  height: calc(100% - 34px) !important;*/
+/*}*/
+
+.access-alarm .MuiAlert-icon {
+  align-items: center;
+}

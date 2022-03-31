@@ -1,0 +1,19 @@
+.stream-container .live-stream-loader{
+    padding: 5px 8px;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    z-index: 1;
+    opacity: 0.9;
+    font-size: 3em;
+    color: white;
+}
+
+.play-btn-container {
+    position: absolute;
+    left: calc(50% - 12px);
+    top: calc(50% - 13px);
+    background: rgb(24, 129, 255);
+    border-radius: 50%;
+    padding: 4px;
+}

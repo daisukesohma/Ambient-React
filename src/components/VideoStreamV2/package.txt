@@ -1,0 +1,15 @@
+{
+  "name": "live_stream",
+  "version": "3.0.0",
+  "description": "Live Stream Component - with Archival Streaming (1.0) and Smart Entity Searching (2.0)",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "email": "rodaan@ambient.ai",
+    "name": "Rodaan Peralta-Rabang"
+  }
+}

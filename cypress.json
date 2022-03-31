@@ -1,0 +1,11 @@
+{
+  "projectId": "ppxt51",
+  "baseUrl": "http://localhost:3000",
+  "env": {
+    "username": "rodaan.rabang@gmail.com",
+    "password": "TestTest!2",
+    "BABEL_ENV": "development",
+    "NODE_ENV": "development"
+  },
+  "defaultCommandTimeout": 40000
+}

@@ -1,0 +1,22 @@
+#WeeklySchedulerTable table thead tr th {
+  text-align: center;
+}
+
+.radio-label{
+    margin-left: 4px;
+}
+
+#EventSelector div .legend-color {
+    margin-right: 12px;
+}
+
+.scheduler-title {
+  color: #626469;
+  font-size: 25px;
+  font-family: "Aeonik-Regular", "Roboto";
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+
+

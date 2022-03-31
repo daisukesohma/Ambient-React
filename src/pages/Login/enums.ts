@@ -1,0 +1,5 @@
+export const VIEWS = {
+  LOGIN: 'LOGIN',
+  SSO_LOGIN: 'SSO_LOGIN',
+  MFA_VERIFY: 'MFA_VERIFY',
+}

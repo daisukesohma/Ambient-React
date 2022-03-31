@@ -1,0 +1,38 @@
+.tippy-tooltip.ambient-naked-opaque-theme {
+  background-color: transparent;
+  border-width: 0;
+  box-shadow: 0px 2px 6px rgba(34, 36, 40, 0.2);
+  font-size: 15px;
+  font-weight: 600;
+  max-width: unset !important;
+  opacity: 1;
+  padding: 0px;
+}
+
+.tippy-tooltip.ambient-naked-opaque-theme[data-placement^=top]>.tippy-arrow {
+  border-width: 0;
+}
+
+.tippy-tooltip.ambient-naked-opaque-theme[data-placement^=bottom]>.tippy-arrow {
+  border-width: 0;
+}
+
+.tippy-tooltip.ambient-naked-opaque-theme[data-placement^=left]>.tippy-arrow {
+  border-width: 0;
+}
+
+.tippy-tooltip.ambient-naked-opaque-theme[data-placement^=right]>.tippy-arrow {
+  border-width: 0;
+}
+
+.tippy-tooltip.ambient-naked-opaque-theme>.tippy-content {
+  padding: 0px;
+}
+
+.tippy-tooltip.ambient-naked-opaque-theme>.tippy-backdrop {
+  background-color: transparent;
+}
+
+.tippy-tooltip.ambient-naked-opaque-theme>.tippy-svg-arrow {
+  fill: transparent;
+}

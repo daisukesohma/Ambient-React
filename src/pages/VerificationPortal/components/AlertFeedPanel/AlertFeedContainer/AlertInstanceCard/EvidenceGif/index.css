@@ -1,0 +1,9 @@
+.MuiSkeleton-root {
+  min-height: 160px;
+  background-color: #626469;
+}
+
+.MuiSkeleton-wave::after {
+  animation: MuiSkeleton-keyframes-wave 3.0s linear 3.0s infinite;
+  background: linear-gradient(90deg, transparent, rgba(33,109,234, 0.3), transparent)
+}

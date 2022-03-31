@@ -1,0 +1,8 @@
+export default {
+  ALERT: 'ALERT',
+  HIGH_ALERT: 'HIGH_ALERT',
+  VIDEO: 'VIDEO',
+  CONFIRM: 'CONFIRM',
+  PAUSE: 'PAUSE',
+  RESPONDERS: 'RESPONDERS',
+}

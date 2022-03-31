@@ -1,0 +1,155 @@
+@font-face {
+  font-family: 'Aeonik-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/Aeonik-Regular.eot'); /* IE9 Compat Modes */
+  src: local('Aeonik-Regular'),
+    url('/fonts/Aeonik-Regular.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */ url('/fonts/Aeonik-Regular.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('/fonts/Aeonik-Regular.woff') format('woff'),
+    /* Modern Browsers */ url('/fonts/Aeonik-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Aeonik-Thin';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/Aeonik-Thin.eot'); /* IE9 Compat Modes */
+  src: local('Aeonik-Thin'),
+    url('/fonts/Aeonik-Thin.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */ url('/fonts/Aeonik-Thin.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('/fonts/Aeonik-Thin.woff') format('woff'),
+    /* Modern Browsers */ url('/fonts/Aeonik-Thin.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Aeonik-Light';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/Aeonik-Light.eot'); /* IE9 Compat Modes */
+  src: local('Aeonik-Light'),
+    url('/fonts/Aeonik-Light.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */ url('/fonts/Aeonik-Light.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('/fonts/Aeonik-Light.woff') format('woff'),
+    /* Modern Browsers */ url('/fonts/Aeonik-Light.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Aeonik-Medium';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/Aeonik-Medium.eot'); /* IE9 Compat Modes */
+  src: local('Aeonik-Medium'),
+    url('/fonts/Aeonik-Medium.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */ url('/fonts/Aeonik-Medium.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('/fonts/Aeonik-Medium.woff') format('woff'),
+    /* Modern Browsers */ url('/fonts/Aeonik-Medium.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+body {
+  margin: 0px;
+  font-family: 'Aeonik-Regular';
+}
+
+.am-body {
+  font-family: 'Aeonik-Regular', 'Roboto';
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+
+.am-body2 {
+  font-family: 'Aeonik-Light', 'Roboto';
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+}
+
+.am-h1 {
+  font-family: 'Aeonik-Light', 'Roboto';
+  font-size: 96px;
+  line-height: 120px;
+  letter-spacing: -1.5px;
+  margin: 0;
+}
+
+.am-h2 {
+  font-family: 'Aeonik-Light', 'Roboto';
+  font-size: 60px;
+  line-height: 72px;
+  letter-spacing: -0.5px;
+  margin: 0;
+}
+
+.am-h3 {
+  font-family: 'Aeonik-Regular', 'Roboto';
+  font-size: 40px;
+  line-height: 48px;
+  margin: 0;
+}
+
+.am-h4 {
+  font-family: 'Aeonik-Light', 'Roboto';
+  font-size: 34px;
+  line-height: 41px;
+  letter-spacing: 0.25px;
+  margin: 0;
+}
+
+.am-h5 {
+  font-family: 'Aeonik-Light', 'Roboto';
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+.am-h6 {
+  font-family: 'Aeonik-Light', 'Roboto';
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  margin: 0;
+}
+
+.am-subtitle1 {
+  font-family: 'Aeonik-Medium';
+  font-weight: 500;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 20px;
+  letter-spacing: 0.15px;
+}
+
+.am-subtitle2 {
+  font-family: 'Aeonik-Regular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.am-button {
+  font-family: 'Aeonik-Medium', 'Roboto';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+}
+
+.am-caption {
+  font-family: 'Aeonik-Regular', 'Roboto';
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+}
+
+.am-overline {
+  font-family: 'Aeonik-Medium', 'Roboto';
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}

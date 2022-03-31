@@ -1,0 +1,10 @@
+.MuiSkeleton-root {
+  background-color: #626469;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.MuiSkeleton-wave::after {
+  animation: MuiSkeleton-keyframes-wave 3.0s linear 3.0s infinite;
+  background: linear-gradient(90deg, transparent, rgba(33,109,234, 0.3), transparent)
+}

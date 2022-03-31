@@ -1,0 +1,25 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - echo $CODEBUILD_BUILD_ID
+      - echo $CODEBUILD_WEBHOOK_TRIGGER
+      - echo $CODEBUILD_WEBHOOK_EVENT
+      - COMMIT_HASH=$(echo $CODEBUILD_BUILD_ID | rev | cut -c 1-6 | rev)
+      - echo $COMMIT_HASH      
+      - export NODE_OPTIONS="--max-old-space-size=8192"
+      - npm install
+  build:
+    commands:
+      - echo Build started on `date`
+      - REACT_APP_ENV=app npm run build
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - aws s3 cp ./build s3://ambient.ai-build-artifacts/product/artifacts/ambient-product-master-app-${COMMIT_HASH} --recursive
+artifacts:
+  files:
+    - '**/*'
+  discard-paths: no
+  base-directory: build

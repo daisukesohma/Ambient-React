@@ -1,0 +1,15 @@
+/* Drag Timeline Tooltip
+  Add something about border-right none for left most element, etc.
+*/
+
+.tooltip-info-block {
+  border: 1px solid #43454A;
+  border-radius: 3px;
+  padding: 2px;
+  display: none;
+}
+
+.tooltip-info-block.active {
+  background: #43454A;
+  display: block;
+}

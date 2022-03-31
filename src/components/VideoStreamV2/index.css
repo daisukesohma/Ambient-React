@@ -1,0 +1,23 @@
+.stream-container .live-stream-loader{
+    padding: 5px 8px;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    z-index: 1;
+    opacity: 0.9;
+    font-size: 3em;
+    color: white;
+}
+
+/* hide video controls in fullscreen */
+/* This is causing HTML5 video controls to NOT show up
+ * on archives page. This CSS should either be contained
+ * or somehow apply selectively to the target component
+ * only
+video::-webkit-media-controls {
+  display:none !important;
+}
+video::-webkit-media-controls-enclosure {
+  display:none !important;
+}
+*/

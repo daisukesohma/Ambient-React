@@ -1,0 +1,98 @@
+import { makeStyles } from '@material-ui/core/styles'
+
+export default makeStyles(({ spacing, palette }) => ({
+  controlBarContainer: {
+    display: 'flex',
+    justifyContent: 'space-between',
+  },
+  controlBarItemContainer: {
+    display: 'flex',
+    alignItems: 'center',
+  },
+  expandContainer: ({ isExpanded }) => ({
+    left: 'calc(50% - 28px)',
+    bottom: isExpanded ? 'auto' : '-10px',
+    textAlign: 'center',
+    position: 'absolute',
+    zIndex: 1,
+    // backgroundColor: 'transparent',
+  }),
+  expander: ({ isExpanded }) => ({
+    width: 56,
+    height: 56,
+    bottom: isExpanded ? 'auto' : '-15px',
+    // backgroundColor: 'transparent',
+    '&:hover': {
+      width: 56,
+      height: 56,
+      backgroundColor: palette.primary.main,
+    },
+  }),
+  expandLabel: {
+    fontSize: 14,
+    color: palette.primary.main,
+  },
+  flex: {
+    display: 'flex',
+    alignItems: 'center',
+  },
+  historyTitle: ({ darkMode }) => ({
+    marginRight: `${spacing(1)} !important`,
+    // color: darkMode ? palette.common.white : palette.common.black,
+  }),
+  instancesContainer: ({ darkMode, isExpanded }) => ({
+    padding: '20px 20px',
+    background: darkMode ? palette.grey[800] : palette.grey[200],
+    // background: palette.background.paper,
+    height: isExpanded ? '100%' : 'auto',
+    overflow: 'scroll',
+    display: 'flex',
+    position: 'relative',
+    width: '100%',
+    boxSizing: 'border-box',
+    justifyContent: 'space-around',
+    boxShadow: '1px 1px 12px 1px black',
+    borderRadius: '8px',
+  }),
+  root: ({ isExpanded }) => ({
+    display: 'block',
+    flexDirection: 'column',
+    position: 'sticky',
+    bottom: 0,
+    // background: 'transparent',
+    zIndex: isExpanded ? 1 : 0,
+    width: '100%',
+    height: isExpanded ? '100%' : '5%',
+    overflowY: 'auto',
+  }),
+  timeSpan: {
+    fontSize: 14,
+    // color: palette.grey[700],
+    marginLeft: 8,
+    marginRight: 8,
+  },
+  title: {
+    display: 'flex',
+    alignItems: 'center',
+    color: palette.error.main,
+    backgroundColor: '#FFE1E7',
+    fontSize: 14,
+    padding: '4px 8px',
+    borderRadius: 4,
+  },
+  unexpandedContainer: ({ darkMode }) => ({
+    display: 'flex',
+    padding: '24px 50px',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    position: 'relative',
+    // background: darkMode ? palette.grey[800] : undefined,
+    borderTop: darkMode ? `1px solid ${palette.grey[600]}` : null,
+  }),
+  containderDiv: ({ isExpanded }) => ({
+    display: isExpanded ? 'block' : 'none',
+    width: '100%',
+    height: '100%',
+    opacity: isExpanded ? 1 : 0,
+  }),
+}))

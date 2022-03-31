@@ -1,0 +1,180 @@
+kbd {
+  /* border: 1px solid gray; */
+  /* border-radius: 3px; */
+  padding: 4px 2px;
+  color: rgba(256,256,256,.7);
+}
+
+/* https://css-tricks.com/svg-line-animation-works/ */
+/* .mouse-left-click {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear alternate infinite;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+} */
+
+.vms-timeline-container {
+    margin-top: 1.3em;
+    margin-bottom: 0.4em;
+}
+
+#vms-timeline-container.below {
+  margin-top: -66px;
+}
+
+#vms-timeline-container.overlay {
+  margin-top: -154px;
+}
+
+#vms-timeline-container.overlay.fullscreen {
+  margin-top: -154px;
+}
+
+/* background-image taken from youtube, can use or not in future */
+#vms-timeline-container .gradient-bottom-dark.visible {
+  opacity: 1;
+  transition: opacity .25s cubic-bezier(0.0, 0.0, 0.2, 1);
+  height: 49px;
+  padding-top: 49px;
+  bottom: 69px;
+  background-position: bottom;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAADGCAYAAAAT+OqFAAAAdklEQVQoz42QQQ7AIAgEF/T/D+kbq/RWAlnQyyazA4aoAB4FsBSA/bFjuF1EOL7VbrIrBuusmrt4ZZORfb6ehbWdnRHEIiITaEUKa5EJqUakRSaEYBJSCY2dEstQY7AuxahwXFrvZmWl2rh4JZ07z9dLtesfNj5q0FU3A5ObbwAAAABJRU5ErkJggg==);
+  background-repeat: repeat-x;
+  position: absolute;
+  width: 100%;
+  pointer-events: none;
+}
+#vms-timeline-container .gradient-bottom-dark {
+  opacity: 0;
+  transition: opacity .1s cubic-bezier(0.4,0.0,1,1);
+}
+.progress-bar {
+    width: 100%;
+    empty-cells: show;
+    opacity: 0.9;
+    margin-top: 1em;
+}
+
+.progress-bar-marker {
+    border-left: 0.15em solid #f8ac59;
+    height: 2.5em;
+    margin-top: -0.5em;
+    position: absolute;
+    z-index: 2;
+}
+
+.progress-bar-marker-end {
+    border-left: 0.15em solid #f8ac59;
+    height: 3em;
+    margin-top: -1em;
+    position: absolute;
+    z-index: 2;
+}
+
+.progress-bar-mouse-indicator{
+    border-left: 0.15em solid #ed5565;
+    position: absolute;
+}
+
+.progress-bar-location-indicator{
+    border-left: 0.15em solid #ec4758;
+    position: relative;
+}
+
+.progress-bar-selection{
+    border-left: 0.15em solid #f8ac59;
+    height: 2.1em;
+    margin-top: -0.3em;
+    position: absolute;
+    background-color: #f8ac59;
+    opacity: 1;
+    z-index: -1;
+}
+
+.playback-thumbnail{
+    position: absolute;
+    top:-2.0em;
+    font-size: 0.8em;
+    margin-top: -0.2em;
+    color: #676a6c;
+    z-index: 1;
+}
+
+.playback-thumbnail-end{
+    top:-3.0em;
+}
+
+.timeline-container{
+    width: 100%
+}
+
+.svg-container {
+    width: 100%;
+    overflow: hidden;
+    background-color: transparent;
+    margin-top: -10px;
+}
+
+.svg-container.darkMode.bottom {
+  background: black;
+}
+
+.svg-quickscroll{
+    width: 100%;
+    overflow: hidden;
+}
+
+.quickscroll-axis{
+    font-size: 8;
+}
+
+.viewBox {
+    margin-top: 0.8em;
+}
+
+.timeline-sidecontrols {
+    margin-top: -1em;
+}
+
+.interactible {
+  cursor: pointer;
+}
+
+.waiting{
+   cursor: wait !important;
+}
+
+.drag-indicator{
+   color: white;
+}
+
+/* Entity Search Styles */
+.entity_selector_container {
+   width: 35%;
+   position: absolute;
+   bottom: 155px;
+   right: 0;
+}
+.entity_search__accordion__button{
+   font-size: 0.8em;
+   text-align: center;
+}
+
+.Select-placeholder{
+    text-align: center !important;
+}
+
+/* Seek Input Styles */
+.seek-input{
+    position: absolute;
+    right: 0;
+    display: flex;
+}

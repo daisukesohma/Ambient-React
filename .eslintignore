@@ -1,0 +1,8 @@
+dist
+node_modules
+coverage
+build
+src/serviceWorker.js
+src/webrtc/Owt/*
+src/webrtc/SignalingChannel.js
+config/webpack.config.js

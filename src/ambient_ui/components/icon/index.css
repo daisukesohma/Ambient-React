@@ -1,0 +1,19 @@
+/* could move this to a useStyles and pass animateInfinite prop, then add
+  animation: dash 1.5s linear forwards infinite;
+  using pathLength=1 simplies stroke-dasharray and makes it more predictable
+    https://www.youtube.com/watch?v=0Wx9QbRQYuI 
+ */
+.animate {
+  stroke-dasharray: 1 1;
+  stroke-dashoffset: 0;
+  animation: dash 1.0s linear forwards;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: -1;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}

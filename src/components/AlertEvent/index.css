@@ -1,0 +1,65 @@
+.investigations__AlertInstance__toolbar {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; 
+}
+
+.alertinstance-toolbar-button {
+  margin-bottom: 4px;
+}
+
+.investigations__AlertInstance__title {
+  border-radius: 4px 4px 0 0; 
+  text-align: center;
+}
+
+.investigations__AlertInstance__title__alert_name {
+  font-size: 1em;
+}
+
+.investigations__AlertInstance__title__stream_name {
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.investigations__AlertInstance__title__date {
+  font-size: 0.75em;
+}
+
+.investigations__AlertInstance__content {
+  padding: 0;
+}
+
+.investigations__AlertInstance__footer {
+  border-radius: 0 0 4px 4px; 
+  border: 1px solid #e7eaec;
+  padding: 10px;
+}
+
+.investigations__AlertInstance__case_menu__text {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.investigations__AlertInstance__case_menu {
+  margin-bottom: 4px;
+}
+
+/* ==== Changing Carousel === */
+.slider {
+  opacity: 1.0;
+  height: 100%;
+}
+
+.slider div {
+  height: 100%;
+}
+
+.slider div.MuiLinearProgress-root {
+  height: 4px;
+}
+
+.slider-wrapper.axis-horizontal {
+  max-width: 500px;
+}
+

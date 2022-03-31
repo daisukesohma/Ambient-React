@@ -1,0 +1,4 @@
+/* https://github.com/react-component/time-picker/issues/123 */
+.rc-time-picker-panel {
+  z-index: 1400;
+}

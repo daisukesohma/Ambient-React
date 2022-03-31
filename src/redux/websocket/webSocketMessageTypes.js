@@ -1,0 +1,5 @@
+export const ALERT = 'ALERT'
+export const INVESTIGATION = 'INVESTIGATION'
+export const MESSAGE = 'message'
+export const NODE_REQUEST_UPDATE = 'NODE_REQUEST_UPDATE'
+export const LOGOUT = 'LOGOUT'

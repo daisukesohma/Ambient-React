@@ -1,0 +1,42 @@
+/* palette.warning.main: '#FFECA6', */
+
+.tippy-tooltip.ambient-yellow-theme {
+  background-color: #FFECA6;
+  font-size: 15px;
+  font-weight: 600;
+  opacity: .75;
+  padding: 2px 4px 0px;
+}
+
+.tippy-tooltip.ambient-yellow-theme[data-placement^=top]>.tippy-arrow {
+  border-width: 8px 8px 0;
+  border-top-color: #FFECA6;
+}
+
+.tippy-tooltip.ambient-yellow-theme[data-placement^=bottom]>.tippy-arrow {
+  border-width: 0 8px 8px;
+  border-bottom-color: #FFECA6;
+}
+
+.tippy-tooltip.ambient-yellow-theme[data-placement^=left]>.tippy-arrow {
+  border-width: 8px 0 8px 8px;
+  border-left-color: #FFECA6;
+}
+
+.tippy-tooltip.ambient-yellow-theme[data-placement^=right]>.tippy-arrow {
+  border-width: 8px 8px 8px 0;
+  border-right-color: #FFECA6;
+}
+
+.tippy-tooltip.ambient-yellow-theme>.tippy-content {
+  padding: 0px 0px;
+  color: #222428;
+}
+
+.tippy-tooltip.ambient-yellow-theme>.tippy-backdrop {
+  background-color: #FFECA6;
+}
+
+.tippy-tooltip.ambient-yellow-theme>.tippy-svg-arrow {
+  fill: #FFECA6;
+}

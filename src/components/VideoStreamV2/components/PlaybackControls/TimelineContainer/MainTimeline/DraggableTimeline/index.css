@@ -1,0 +1,9 @@
+/* Draggable Timeline */
+.draggable {
+  cursor: grab;
+}
+
+/* Make Draggable area darker */
+.draggable:hover {
+
+}

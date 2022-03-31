@@ -1,0 +1,35 @@
+.tippy-tooltip.ambient-naked-theme {
+  background-color: black;
+  font-size: 15px;
+  font-weight: 600;
+  opacity: .8;
+  padding: 0px;
+}
+
+.tippy-tooltip.ambient-naked-theme[data-placement^=top]>.tippy-arrow {
+  border-width: 0;
+}
+
+.tippy-tooltip.ambient-naked-theme[data-placement^=bottom]>.tippy-arrow {
+  border-width: 0;
+}
+
+.tippy-tooltip.ambient-naked-theme[data-placement^=left]>.tippy-arrow {
+  border-width: 0;
+}
+
+.tippy-tooltip.ambient-naked-theme[data-placement^=right]>.tippy-arrow {
+  border-width: 0;
+}
+
+.tippy-tooltip.ambient-naked-theme>.tippy-content {
+  padding: 0px;
+}
+
+.tippy-tooltip.ambient-naked-theme>.tippy-backdrop {
+  background-color: transparent;
+}
+
+.tippy-tooltip.ambient-naked-theme>.tippy-svg-arrow {
+  fill: transparent;
+}

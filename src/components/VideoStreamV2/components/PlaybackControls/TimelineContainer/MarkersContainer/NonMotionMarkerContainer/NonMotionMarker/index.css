@@ -1,0 +1,11 @@
+svg rect.nonmotion.hovering {
+  transition: height .1s cubic-bezier(0.0,0.0,0.2,1), opacity .25s, transform .25s;
+  height: 7px; /* keep in sync with ./constants/EXPANDED_TIMELINE_HEIGHT */
+  opacity: 1;
+}
+
+svg rect.nonmotion {
+  transition: height .1s cubic-bezier(0.4,0.0,1,1), opacity .25s, transform .25s;
+  height: 5px;
+  opacity: .5;
+}

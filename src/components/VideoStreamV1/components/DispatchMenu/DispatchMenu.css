@@ -1,0 +1,24 @@
+.dispatch_menu_component {
+  background-color: white;
+  padding: 16px;
+  border-radius: 4px;
+}
+
+.dispatch_menu_component {
+  font-size: 18px;
+}
+
+.dispatch_menu_component__row {
+  padding: 4px;
+  margin-bottom: 4px;
+  display: flex;
+
+}
+
+.dispatch_menu_component__row__last {
+  display: flex;
+}
+
+.dispatch_menu_component__selected_ts{
+  font-size: 12px;
+}

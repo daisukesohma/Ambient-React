@@ -1,0 +1,24 @@
+.level__toolbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.level__number {
+  margin-top: 16px;
+}
+
+.level__buttons {
+  display: flex;
+  margin-top: -3px;
+}
+
+.level__droppablearea {
+  min-height: 400px;
+  max-height: 400px;
+  margin-bottom: 16px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  /*background-color: white;*/
+  border-radius: 4px;
+}

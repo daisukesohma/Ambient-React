@@ -1,0 +1,11 @@
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+/* SET CONSTANT COLOR FOR react-multi-select-component while it hasn't dark mode */
+.multi-select {
+  color: black !important;
+}

@@ -1,0 +1,90 @@
+/* eslint-disable react/jsx-props-no-spreading */
+import React from 'react'
+// import PropTypes from 'prop-types'
+import { makeStyles, Theme, createStyles } from '@material-ui/core/styles'
+import Button from '@material-ui/core/Button'
+import { ThemeProvider } from '@material-ui/core/styles'
+import { Box } from '@material-ui/core'
+import CircularProgress from '@material-ui/core/CircularProgress'
+
+import { AmbientTheme } from '../design_system'
+
+import '../design_system/AmbientTheme.css'
+
+const useStyles = makeStyles((theme: Theme) =>
+  createStyles({
+    amRoot: ({ height }: { height: string | number | undefined }) => ({
+      height,
+      borderRadius: 20,
+      boxShadow: 'none',
+      fontFamily: theme.typography.button.fontFamily,
+    }),
+    innerBox: {
+      width: '100%',
+    },
+  }),
+)
+
+interface Props {
+  children?: React.ReactNode
+  color?: 'default' | 'inherit' | 'primary' | 'secondary'
+  customStyle?: any
+  disabled?: boolean
+  height?: string | number | undefined
+  loading?: boolean
+  onClick?: () => void
+  variant?: 'text' | 'contained' | 'outlined' | undefined
+}
+
+function AmbientButton({
+  children,
+  color,
+  customStyle,
+  disabled,
+  height,
+  loading,
+  onClick,
+  variant,
+  ...extraProps
+}: Props): JSX.Element {
+  const classes = useStyles({ height })
+
+  return (
+    <ThemeProvider theme={AmbientTheme}>
+      <Box display='flex' flexDirection='row' alignItems='center'>
+        <Box className={classes.innerBox}>
+          <Button
+            color={color}
+            variant={variant}
+            onClick={onClick}
+            disabled={disabled}
+            classes={{ root: classes.amRoot }}
+            className='button'
+            style={customStyle}
+            {...extraProps}
+          >
+            {children}
+          </Button>
+        </Box>
+        {loading && (
+          <Box ml={0.5}>
+            <CircularProgress size={24} />
+          </Box>
+        )}
+      </Box>
+    </ThemeProvider>
+  )
+}
+
+AmbientButton.defaultProps = {
+  onClick: () => {},
+  color: 'primary',
+  children: ['Empty Button'],
+  disabled: false,
+  variant: 'contained',
+  customStyle: {},
+  loading: false,
+  height: 36,
+}
+
+export default AmbientButton

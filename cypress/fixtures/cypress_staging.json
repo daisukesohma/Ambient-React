@@ -1,0 +1,9 @@
+{
+  "projectId": "kbkemz",
+  "baseUrl": "https://localhost:3000",
+  "env": {
+    "username": "eric+cypress@ambient.ai",
+    "password": "Ambient!2",
+    "gqlServerRoot": "/api/graphql"
+  }
+}
